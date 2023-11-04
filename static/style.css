@@ -1,0 +1,42 @@
+:root {
+  --background-color: #1a1a1a;
+  --text-color: #ffffff;
+  --accent-color: #0077c2;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  border-collapse: separate;
+  border-radius: 50px;
+  border-spacing: 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+th, td {
+  text-align: center;
+  padding: 12px;
+  border-bottom: 1px solid var(--accent-color);
+  font-size: 18px;
+}
+
+th {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+tr:nth-child(even) {
+  background-color: #333333;
+}
+
+tr:hover {
+  background-color: #444444;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SpaceX Launches</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+</head>
+<body>
+    <h1>SpaceX Launches</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Date (UTC)</th>
+            <th>Success</th>
+        </tr>
+        {% for launch in launches %}
+        <tr>
+            <td>{{ launch.name }}</td>
+            <td>{{ launch.date_utc }}</td>
+            <td>{{ launch.success }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
